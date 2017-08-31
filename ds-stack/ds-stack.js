@@ -8,7 +8,7 @@ var Stack = function() {
     };
     
     this.remove = function() {
-    	if(this._counter){
+    	if(!this._counter===0){
     		this._counter--
     		var x= this._storage[this._counter]
     		delete this._storage[this._counter]
